@@ -4,7 +4,6 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-
 import javax.persistence.Embeddable;
 
 @Data
@@ -12,8 +11,9 @@ import javax.persistence.Embeddable;
 @AllArgsConstructor
 @Builder
 @Embeddable
-public class ProductsInOrder {
+public class CustomerInfo {
 
-    private String name;
-    private Integer count;
+    private String firstName;
+    private String lastName;
+    private String phone;
 }
